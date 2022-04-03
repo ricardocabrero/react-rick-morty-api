@@ -1,3 +1,7 @@
+# Url hosting
+
+This project is published in this url: [https://rc-react-rick-morty-api.surge.sh/](https://rc-react-rick-morty-api.surge.sh/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
