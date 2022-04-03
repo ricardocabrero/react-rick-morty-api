@@ -1,0 +1,38 @@
+
+.header {
+   background: #000000;
+   box-sizing: border-box;
+   height: 55px;
+   position: fixed;
+   width: 100%;
+   z-index: 1;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 1rem;
+   top: 0;
+   transition: top ease-in-out .4s .1s;
+}
+
+.header.anima {
+   top: -55px;
+}
+
+.header h1 {
+   margin: 0;
+   color: #ffffff;
+   font-weight: 500;
+   height: 100%;
+   font-size: 24px;
+   line-height: 50px;
+}
+
+@media(max-width:768px) {
+   .header h1 {
+      font-size: 22px;
+   }
+}
+
+.header p {
+   color: #0088ff;
+   font-weight: 600;
+}

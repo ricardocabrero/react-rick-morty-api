@@ -1,0 +1,21 @@
+.pagination {
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding: 1.3rem .3rem;
+}
+
+@media(max-width:768px) {
+   .pagination {
+      border-top: .12rem solid #2196f3;
+      position: fixed;
+      bottom: 0;
+      z-index: 1;
+      background: #fff;
+      box-shadow: 0 0 5px #ccc;
+      padding: .75rem .3rem;
+   }
+
+}

@@ -1,0 +1,40 @@
+.container {
+   display: flex;
+   width: 100%;
+   background: #fff;
+   max-width: 650px;
+   border-radius: 15px;
+   overflow: hidden;
+   margin: 0 2% 0 1%;
+   box-shadow: 0 2px 8px hsl(0deg 0% 30% / 50%), 0 0 0 1px hsl(0deg 0% 8% / 20%);
+}
+
+@media(max-width: 670px) {
+   .container {
+      max-width: 97%;
+   }
+}
+
+.media img {
+   height: 100%;
+   max-height: 250px;
+   width: auto;
+   display: block;
+}
+
+@media(max-width: 670px) {
+   .media img {
+      max-height: 210px;
+   }
+}
+
+.text {
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.text p {
+   margin: .5rem 0;
+}

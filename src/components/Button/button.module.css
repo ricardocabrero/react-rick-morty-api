@@ -1,0 +1,60 @@
+ .button {
+   appearance: none;
+   border: 1px solid #ccc;
+   font-size: 1rem;
+   border-radius: 5px;
+   margin: 0 0.5rem;
+   cursor: pointer;
+   background: #fff;
+   color: #363636;
+   padding: 0.2rem 1rem;
+   width: 80px;
+}
+
+ .button[disabled], 
+ .button:active[disabled],
+ .button:hover[disabled] {
+   opacity: .4;
+   background: #fff;
+   color: #363636;
+}
+
+ .button.right {
+   padding-right: .5rem;
+}
+
+ .button.left {
+   padding-left: .5rem;
+}
+
+.button svg {
+   position: relative;
+   top: 0.156rem;
+}
+
+.button.right svg {
+   right: -0.2rem;
+}
+
+.button.left svg {
+   left: -0.2rem;
+}
+
+@media(max-width:768px) {
+   .button {
+      width: 50px;
+      border-color: #bbb9b9;
+   }
+
+   .button span {
+      display: none;
+   }
+
+   .button.right svg {
+      right: .2rem;
+   }
+   
+   .button.left svg {
+      left: .2rem;
+   }
+}
