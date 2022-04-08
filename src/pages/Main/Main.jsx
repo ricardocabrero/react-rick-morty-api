@@ -1,7 +1,6 @@
-import { useEffect } from 'react';
 import useFetch from '../../customHooks/useFetch';
 import TplPrimary from '../../tpls/TplPrimary/TplPrimary';
-import MainView from '../../views/mainView/MainView';
+import MainView from '../../views/MainView/MainView';
 
 export default function Main() {
 

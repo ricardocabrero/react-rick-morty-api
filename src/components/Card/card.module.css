@@ -1,17 +1,19 @@
 .container {
    display: flex;
-   width: 100%;
+   width: 98.3%;;
    background: #fff;
    max-width: 650px;
    border-radius: 15px;
    overflow: hidden;
-   margin: 0 2% 0 1%;
+   margin: 1.25rem .85% 0;
    box-shadow: 0 2px 8px hsl(0deg 0% 30% / 50%), 0 0 0 1px hsl(0deg 0% 8% / 20%);
 }
 
 @media(max-width: 670px) {
    .container {
-      max-width: 97%;
+      max-width: none;
+      width: calc(100% - 1.2rem);
+      margin: 1.25rem .6rem;
    }
 }
 
@@ -29,7 +31,7 @@
 }
 
 .text {
-   padding: 0 20px;
+   padding: 0 1.5rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -37,4 +39,33 @@
 
 .text p {
    margin: .5rem 0;
+}
+
+@media(max-width: 670px) {
+   .text {
+      padding: 0 1rem;
+   }
+   .text p {
+      margin-bottom: 0;
+   }
+   .text p:last-child {
+      margin-bottom: .5rem;
+   }
+}
+
+.text span.green {
+   color: #06bdac;
+}
+
+.text span.red {
+   color: #ff0000;
+}
+
+.text span.orange {
+   color: #9c27b0;
+}
+
+.scrolly {
+   overflow-y: scroll;
+   display: block;
 }

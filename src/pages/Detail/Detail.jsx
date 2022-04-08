@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import useFetch from '../../customHooks/useFetch';
-import Header from '../../components/Header/Header';
-import Card from '../../components/Card/Card';
+import TplPrimary from '../../tpls/TplPrimary/TplPrimary';
+import DetailView from '../../views/DetailView/DetailView';
 
 export default function Detail() {
 
@@ -16,14 +16,14 @@ export default function Detail() {
 
    return (
       <>
-      <Header textHeader={textHeader}/>
-      <p>Detail page {JSON.stringify(dataResults)}</p>
-      <Card name={name} 
-      image={image}
-      status={status}
-      species={species}
-      gender={gender}
-      location={locationName}/>
+         <TplPrimary textHeader={textHeader}>
+            <DetailView name={name} 
+            image={image}
+            status={status}
+            species={species}
+            gender={gender}
+            location={locationName}/>
+         </TplPrimary>
       </>
    )
 }

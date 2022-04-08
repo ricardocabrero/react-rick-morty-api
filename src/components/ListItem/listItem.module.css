@@ -10,7 +10,7 @@
 }
 
 .item.skeleton {
-   box-shadow: 0 2px 8px hsl(0deg 0% 1% / 1%), 0 0 0 1px hsl(0deg 0% 1% / 1%);
+   box-shadow: 0 2px 8px rgba(243, 206, 105, 0.01), 0 0 0 1px hsl(0deg 0% 1% / 1%);
 }
 
 @media(max-width:1024px) {
@@ -68,7 +68,12 @@ p.skeleton {
    width: 70%;
    height: 1.125rem;
    margin: 0.5rem auto;
-   /* animation: skeleton .5 linear infinite alternate; */
+}
+
+@media(max-width:480px) {
+   p.skeleton {
+      height: 1.25rem;
+   }
 }
 
 p.skeleton:nth-child(odd) {
