@@ -23,7 +23,7 @@ export default function DetailView (props) {
          if(imgC.complete) {
             setLoaddedImages(true);
          } else {
-            setTimeout(() => fnRcs(), 200);
+            setTimeout(() => fnRcs(), 300);
          }
       }
       
