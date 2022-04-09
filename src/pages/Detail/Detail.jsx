@@ -11,13 +11,16 @@ export default function Detail() {
    const detailUrl = `https://rickandmortyapi.com/api/character/${id}`;
    const {dataResults} = useFetch(detailUrl, {});
 
+   const { loading } = dataResults;
    const { name, image, status, species, gender } = dataResults.data;
    const locationName = dataResults.data.location?.name;
 
    return (
       <>
          <TplPrimary textHeader={textHeader}>
-            <DetailView name={name} 
+            <DetailView 
+            loading={loading}
+            name={name} 
             image={image}
             status={status}
             species={species}

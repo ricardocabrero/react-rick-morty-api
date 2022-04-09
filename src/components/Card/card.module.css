@@ -41,6 +41,12 @@
    margin: .5rem 0;
 }
 
+.text p.skeleton {
+   height: 1em;
+   background: #ebebeb;
+   width: 200px;
+}
+
 @media(max-width: 670px) {
    .text {
       padding: 0 1rem;

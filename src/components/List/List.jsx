@@ -12,14 +12,14 @@ export default function List({listData, loading}) {
 
       setLoaddedImages(false);
 
-      const list = listData.map(({image}) => {
+      const listImage = listData.map(({image}) => {
          const img = new Image();
          img.src = image;
          return img;           
       });
          
       function fnRcs() {
-         if(list.every(item => item.complete === true)) {
+         if(listImage.every(item => item.complete)) {
             setLoaddedImages(true)
          } else {
             setTimeout(() => fnRcs(), 200);

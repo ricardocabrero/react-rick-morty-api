@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useEffect, useRef } from 'react';
 import styles from './card.module.css';
 import { stylesStatus } from '../../utils/stylesStatus';
@@ -14,7 +15,6 @@ export default function Card ({image, name, species, status, gender, location}) 
    }
 
    useEffect(() => {
-
          const text = textContainer.current;
          const img = mediaImg.current;
          const textH = text.clientHeight;
@@ -45,4 +45,13 @@ export default function Card ({image, name, species, status, gender, location}) 
          </div>
       </div>
    )
+}
+
+Card.propTypes = {
+   image: PropTypes.string.isRequired,
+   name: PropTypes.string.isRequired,
+   species: PropTypes.string.isRequired,
+   status: PropTypes.string.isRequired,
+   gender: PropTypes.string.isRequired,
+   location: PropTypes.string.isRequired
 }
