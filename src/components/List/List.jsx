@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { useState, useEffect } from 'react';
 import ListItem from '../ListItem/ListItem';
 import ListItemSkeleton from '../ListItem/ListItemSkeleton';
 import styles from './list.module.css';
@@ -34,7 +34,7 @@ export default function List({listData, loading}) {
       <ul className={styles.list}>
          {listData && listData.map(({id, ...props}) => (
          (!loadedImages || loading)
-         ? <ListItemSkeleton key={id} id={id} {...props}/> 
+         ? <ListItemSkeleton key={id} id={id}/> 
          : <ListItem key={id} id={id} {...props}/>)
          )}
       </ul>

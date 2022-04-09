@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import styles from './pagination.module.css';
 import Button from '../Button/Button';
+import styles from './pagination.module.css';
 
 export default function Pagination({info, handleChangeUrl}) {
 

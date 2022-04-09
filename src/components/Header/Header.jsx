@@ -1,5 +1,5 @@
-import { useRef, useEffect, forwardRef } from 'react';
 import PropTypes from 'prop-types';
+import { useRef, useEffect, forwardRef } from 'react';
 import styles from './header.module.css';
 
 const Header = forwardRef(({titleHeader, textHeader}, ref) => {

@@ -1,13 +1,12 @@
-import PropTypes from 'prop-types';
 import image from '../../images/skeleton-item-img.jpeg';
 import styles from './card.module.css';
 
-export default function CardSkeleton ({name}) {
+export default function CardSkeleton () {
    
    return (
       <div className={styles.container}>
          <div className={styles.media}>
-            <img src={image} alt={name}/>
+            <img src={image} alt={'loading'}/>
          </div>
          <div className={styles.text}>
             <p className={styles.skeleton}></p>
@@ -18,8 +17,4 @@ export default function CardSkeleton ({name}) {
          </div>
       </div>
    ) 
-}
-
-CardSkeleton.propTypes = {
-   name: PropTypes.string,
 }

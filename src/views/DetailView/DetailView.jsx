@@ -32,7 +32,7 @@ export default function DetailView (props) {
    }, [image]);
    
    const cardComponent = (!loadedImages || loading) 
-   ? <CardSkeleton {...props}/> : <Card {...props}/>;
+   ? <CardSkeleton/> : <Card {...props}/>;
 
    return (
       <>

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect, useRef } from 'react';
-import styles from './card.module.css';
 import { stylesStatus } from '../../utils/stylesStatus';
+import styles from './card.module.css';
 
 export default function Card ({image, name, species, status, gender, location}) {
 

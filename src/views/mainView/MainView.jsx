@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { useState, useEffect } from 'react';
 import List from '../../components/List/List';
 import Pagination from '../../components/Pagination/Pagination';
 

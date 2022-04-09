@@ -47,15 +47,27 @@
    width: 200px;
 }
 
+.text p.skeleton:nth-child(even) {
+   width: 180px;
+}
+
 @media(max-width: 670px) {
    .text {
       padding: 0 1rem;
+      display: block;
+      width: 100%;
    }
    .text p {
       margin-bottom: 0;
    }
    .text p:last-child {
       margin-bottom: .5rem;
+   }
+   .text p.skeleton {
+      width: 80%;
+   }
+   .text p.skeleton:nth-child(even) {
+      width: 60%;
    }
 }
 
@@ -73,5 +85,4 @@
 
 .scrolly {
    overflow-y: scroll;
-   display: block;
 }

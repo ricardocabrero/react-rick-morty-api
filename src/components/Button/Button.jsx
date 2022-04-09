@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import styles from './button.module.css';
 import { FcPrevious, FcNext } from "react-icons/fc";
+import styles from './button.module.css';
 
 export default function Button ({classStyle, action, disabled, text}) {
 
