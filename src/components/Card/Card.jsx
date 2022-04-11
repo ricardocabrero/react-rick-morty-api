@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import { stylesStatus } from '../../utils/stylesStatus';
 import styles from './card.module.css';
 
@@ -14,7 +14,7 @@ export default function Card ({image, name, species, status, gender, location}) 
       unknown: `${styles.orange}` 
    }
 
-   useEffect(() => {
+   useLayoutEffect(() => {
          const text = textContainer.current;
          const img = mediaImg.current;
          const textH = text.clientHeight;
